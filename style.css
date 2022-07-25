@@ -1,0 +1,112 @@
+#race {
+  text-align: center;
+  background-color: #242021;
+}
+
+h1,
+h2,
+h3 {
+  color: #a2a2a2;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 50px;
+}
+button {
+  color: white;
+  padding: 3px 50px;
+  margin: 10px 8px;
+  font-size: 15px;
+  line-height: 1.5;
+  border: 2px solid white;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+.disabledBtn {
+  border: 2px solid #999999;
+  color: #666666;
+  cursor: not-allowed;
+}
+.background-img {
+  background-image: url("./img/raceTrack.jpg");
+  background-size: contain;
+  height: 300px;
+  position: relative;
+  margin-top: 20px;
+}
+.car1 {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 20%;
+}
+.car2 {
+  position: absolute;
+  left: 0;
+  bottom: 25%;
+  width: 20%;
+}
+.car-1 {
+  color: #ffebf7;
+}
+.car-2 {
+  color: #ba0000;
+}
+.table-style {
+  border: 3px solid white;
+  padding: 20px;
+  color: #a2a2a2;
+}
+#count {
+  display: none;
+  height: 300px;
+  width: auto;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+#coun {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 150px;
+}
+#flag {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .car1 {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 25%;
+  }
+  .car2 {
+    position: absolute;
+    left: 0;
+    bottom: 45%;
+    width: 25%;
+  }
+}
